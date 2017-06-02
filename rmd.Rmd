@@ -1,0 +1,58 @@
+---
+title: "Untitled"
+author: "kim"
+date: "June 2, 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+my name is kim. This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Diamonds, Price versus Carat
+
+The following plot shows carat versus price.
+
+```{r diamonds}
+library(ggplot2)
+qplot(carat,price,data=diamonds)
+```
+
+## Diamonds, Price/Carat versus Carat
+
+The following plot shows carat versus price/carat.
+
+```{r diamondspc}
+qplot(carat,price/carat,data=diamonds)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated t## Diamonds, Price versus Carat
+
+The following plot shows carat versus price.
+
+```{r diamondslog}
+qplot(log(carat),log(price),data=diamonds)
+```
+
+```{r diamondscolor}
+qplot(carat,price,data=diamonds,colour=color)
+```
+![mice](C:\Users\Kim\Desktop\01-females-more-engaged-online.jpg)
